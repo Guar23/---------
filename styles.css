@@ -29,7 +29,7 @@ li {
 .menu {
     height: 60px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     
@@ -46,12 +46,16 @@ li {
 .menu li:hover {
     background-color: rgb(51, 51, 51);
 }
-.menu a {
+ a {
     font-size: 20px;
     text-decoration: none; 
     color: rgb(235, 230, 205);
  }
  
+a:hover {
+    text-decoration: underline; 
+}
+
 .aboutMe {
 height: 500px;
 background-color: rgb(235, 230, 205);
@@ -140,12 +144,28 @@ flex-direction: column;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
 }
 
-.projects {
+/*.projects {
 height: 500px;
 background-color: rgb(235, 230, 205);
- }
+ }*/
 
  .contacts {
-height: 300px;
-background-color: rgb(77, 77, 77);
+height: 200px;
+background-color:  rgb(59, 59, 59);
+display: grid;
+grid-template-columns: 1fr 2fr 1fr;
+justify-content: center;
+padding: 40px;
+ }
+
+ .contacts h2{
+    color: rgb(235, 230, 205);
+    padding: 20px;
+    text-decoration: underline;
+ }
+
+ .contacts li{
+    color: rgb(235, 230, 205);
+    font-size: 20px;
+    padding: 10px;
  }
