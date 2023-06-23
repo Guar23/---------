@@ -19,6 +19,12 @@ li {
     list-style-type: none;
 }
 
+span {
+    display: block;
+    border: dashed;
+    border-color: rgb(77, 77, 77);
+}
+
 .navbar{
     background-color: rgb(59, 59, 59);
     width: 100%;
@@ -29,7 +35,7 @@ li {
 .menu {
     height: 60px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     
@@ -144,11 +150,85 @@ flex-direction: column;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
 }
 
-/*.projects {
-height: 500px;
-background-color: rgb(235, 230, 205);
- }*/
+.projects {
 
+background-color: rgb(235, 230, 205);
+ }
+
+.project{
+    display: flex;
+    padding: 60px;
+    justify-content: space-between;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+}
+
+.about h2{
+    font-size: 25px;
+    padding-bottom: 10px;  
+}
+
+.about p{
+    font-size: 20px;
+    text-align: left;
+    padding: 5px;
+}
+
+.about a {
+    font-size: 20px;
+    
+    padding: 10px;
+    color: black;
+}
+
+.gameScreens{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.gameScreens img{
+    height: 200px;
+}
+.imgScreen:hover{
+    box-shadow: 10px 20px 30px rgba(0,0,0,0.5);
+    transform: scale(1.7);
+    transition: 1s;
+}
+
+.gamevideo{
+    display: none;
+    width: 80%;
+    box-shadow: 10px 20px 30px rgba(0,0,0,0.5);
+}
+
+.startVideo{
+ display: block;
+ border: solid;
+ border-color: rgb(145, 5, 28);
+ left: 100px;
+ position: absolute;
+}
+
+.shopScreens{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-columns: auto;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
+
+.shopScreens img{
+    width: 300px;
+}
  .contacts {
 height: 200px;
 background-color:  rgb(59, 59, 59);
