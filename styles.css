@@ -1,22 +1,41 @@
 
+
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
-    scroll-margin-top: 60px;
-    
+    scroll-margin-top: 60px;   
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-body {
-    
+body {   
 background-color: rgb(77, 77, 77);
 text-align: center;
 position: relative;
 }
+
+p {
+    font-size: 20px;
+}
+
+ a {
+    font-size: 20px;
+    text-decoration: none; 
+    color: rgb(235, 230, 205);
+ }
+ 
+a:hover {
+    text-decoration: underline; 
+}
+
+@media (max-width: 630px) {
+    a, p {
+      font-size: 15px;
+    }
+  }
 
 li {
     list-style-type: none;
@@ -56,21 +75,12 @@ span {
 .menu li:hover {
     background-color: rgb(51, 51, 51);
 }
- a {
-    font-size: 20px;
-    text-decoration: none; 
-    color: rgb(235, 230, 205);
- }
- 
-a:hover {
-    text-decoration: underline; 
-}
+
 
 .aboutMe {
 background-color: rgb(235, 230, 205);
 margin-top: 60px;
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+display: flex;
 justify-items: center;
 justify-content: space-around;
 gap: 20px;
@@ -84,7 +94,7 @@ align-self: center;
 }
 
 .avatar{
-    width: 90%;
+    height: 300px;
     border-radius: 50%;
  }
 
@@ -92,17 +102,27 @@ align-self: center;
     font-size: 50px;
  }
  .aboutMe p{
-    font-size: 20px;
     text-align: start;
     text-indent: 25px;
  }
 
  .rightBlAbout{
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 20px;
  }
+
+ @media (max-width: 1000px) {
+    .aboutMe{
+    flex-wrap: wrap;    
+    }
+    .rightBlAbout {
+      width: 90%;
+    }
+  }
+
 
 .socialLinksAbout{
     display: grid;
@@ -144,7 +164,6 @@ align-self: center;
 }
 .textSkills p{
     color: rgb(235, 230, 205); 
-    font-size: 20px;
     text-align: left;
     
 }
@@ -158,18 +177,19 @@ background-color: rgb(235, 230, 205);
  }
 
 .project{
+    max-width: 1000px;
     display: flex;
     padding: 60px;
     justify-content: center;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 .about {
-    max-width: 510px;
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 100%;
+
 }
 
 .about h2{
@@ -178,29 +198,27 @@ background-color: rgb(235, 230, 205);
 }
 
 .about p{
-    font-size: 20px;
     text-align: left;
     padding: 5px;
 }
 
-.about a {
-    font-size: 20px;
-    
+.about a { 
     padding: 10px;
     color: black;
 }
 
-.gameScreens{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.Screens{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    align-items: center;
-    padding: 10px;
+    padding-top: 20px;
 }
 
-.gameScreens img{
-    height: 200px;
+.Screens img{
+    width: 300px;
 }
+
 .imgScreen:hover{
     box-shadow: 10px 20px 30px rgba(0,0,0,0.5);
     transform: scale(1.7);
@@ -221,24 +239,11 @@ background-color: rgb(235, 230, 205);
  position: absolute;
 }
 
-.shopScreens{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-columns: auto;
-    gap: 20px;
-    align-items: center;
-    padding: 10px;
-}
-
-.shopScreens img{
-    width: 300px;
-}
  .contacts {
-height: 200px;
 background-color:  rgb(59, 59, 59);
-display: grid;
-grid-template-columns: 1fr 2fr 1fr;
-justify-content: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
 padding: 40px;
  }
 

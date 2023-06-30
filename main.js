@@ -24,6 +24,6 @@ const videoStarter = document.getElementById("videoScreen");
  const video = document.getElementById("gamevideo");
 videoStarter.onclick = function () {
   video.classList.toggle("startVideo");
-  console.log("gjkexbkjcm&")
+ 
 }
 video.onclick = function () {video.classList.remove("startVideo");}
