@@ -238,7 +238,7 @@ background-color: rgb(235, 230, 205);
  display: block;
  border: solid;
  border-color: rgb(145, 5, 28);
- left: 100px;
+ align-self: flex-end;
  position: absolute;
 }
 
