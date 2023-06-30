@@ -31,7 +31,7 @@ a:hover {
     text-decoration: underline; 
 }
 
-@media (max-width: 630px) {
+@media all and (max-width: 630px) {
     a, p {
       font-size: 15px;
     }
@@ -114,7 +114,7 @@ align-self: center;
     padding-left: 20px;
  }
 
- @media (max-width: 1000px) {
+ @media all and (max-width: 1000px) {
     .aboutMe{
     flex-wrap: wrap;    
     }
