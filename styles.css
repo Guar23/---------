@@ -31,7 +31,7 @@ a:hover {
     text-decoration: underline; 
 }
 
-@media all and (max-width: 630px) {
+@media (max-width: 630px) {
     a, p {
       font-size: 15px;
     }
@@ -84,7 +84,7 @@ display: flex;
 justify-items: center;
 justify-content: space-around;
 gap: 20px;
-padding: 20px;
+padding: 40px;
  }
 
 .leftBlAbout{
@@ -94,7 +94,9 @@ align-self: center;
 }
 
 .avatar{
-    height: 300px;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
  }
 
@@ -114,7 +116,7 @@ align-self: center;
     padding-left: 20px;
  }
 
- @media all and (max-width: 1000px) {
+ @media (max-width: 1000px) {
     .aboutMe{
     flex-wrap: wrap;    
     }
@@ -127,7 +129,6 @@ align-self: center;
 .socialLinksAbout{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 50%;
     padding-bottom: 20px;
 }
 
@@ -149,7 +150,6 @@ align-self: center;
     display: flex;
     max-width: 810px;
     flex-direction: column;
-    padding: 20px;
 }
 .textSkills{
     display: flex;
@@ -158,7 +158,7 @@ align-self: center;
 }
 .textSkills h2{
     color: rgb(235, 230, 205); 
-    width: 300px;
+    
     padding-right: 20px;
     
 }
@@ -168,6 +168,7 @@ align-self: center;
     
 }
 .memeImg{
+    width: 100%;
     max-height: 400px;
     box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
 }
@@ -216,7 +217,8 @@ background-color: rgb(235, 230, 205);
 }
 
 .Screens img{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .imgScreen:hover{
